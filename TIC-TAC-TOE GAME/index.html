@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Tic Tac Toe</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎮 Tic Tac Toe</h1>
+
+    <div class="controls">
+        <button onclick="setMode('player')">2 Player</button>
+        <button onclick="setMode('ai')">Play vs AI</button>
+        <button onclick="toggleTheme()">🌙 Toggle Theme</button>
+    </div>
+
+    <h2 id="status">Player X's Turn</h2>
+
+    <div class="board" id="board"></div>
+
+    <div class="scoreboard">
+        <p>X Score: <span id="xScore">0</span></p>
+        <p>O Score: <span id="oScore">0</span></p>
+    </div>
+
+    <button onclick="restartGame()">Restart Game</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
